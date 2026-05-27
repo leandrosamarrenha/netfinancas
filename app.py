@@ -57,7 +57,7 @@ def mes_abrev(m): return MESES_PT.get(str(m), str(m))
 # ─── PERSISTÊNCIA GITHUB ───────────────────────────────────────────────────────
 # Secrets necessários no Streamlit Cloud:
 #   GITHUB_TOKEN → Personal Access Token com escopo repo (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)
-#   GITHUB_REPO  → "leandrosamarrenha/netfinanças"
+#   GITHUB_REPO  → "leandrosamarrenha/netfinancas"
 
 def _gh_headers():
     token = st.secrets.get("GITHUB_TOKEN", None)
@@ -1270,7 +1270,7 @@ with st.sidebar:
 st.markdown("""
 <div class="main-header" style="display:flex;align-items:center;justify-content:space-between;">
     <div><h1>📊 Relatórios Onboarding</h1><p>Análise de Chamados e Ordens de Serviço</p></div>
-    <img src="https://raw.githubusercontent.com/leandrosamarrenha/netfinan%C3%A7as/main/finnet.jpg"
+    <img src="https://raw.githubusercontent.com/leandrosamarrenha/netfinancas/main/finnet.jpg"
          style="height:72px;mix-blend-mode:lighten;opacity:0.92;" alt="Finnet" />
 </div>
 """, unsafe_allow_html=True)
